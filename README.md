@@ -1,4 +1,4 @@
-# Example Docker compose for Telegraf, InfluxDB and Grafana, Sample Asp.Net Core app, MondoDB, Elasticsearch + Kibana
+# Example Docker compose for Telegraf, InfluxDB and Grafana, Sample Asp.Net Core App, MondoDB, Elasticsearch + Kibana
 
 Sample docker-compose file with TIF, Elastisearch + Kibana, Asp.Net Core file, MongoDB
 
