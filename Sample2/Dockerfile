@@ -7,14 +7,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["./docker-tif-elastic-mongodb/Sample2/Sample2.csproj", "./docker-tif-elastic-mongodb/Sample2/"]
-RUN dotnet restore "./docker-tif-elastic-mongodb/Sample2/Sample2.csproj"
+COPY ["./docker-compose-asp.net-elastic-tif/Sample2/Sample2.csproj", "./docker-compose-asp.net-elastic-tif/Sample2/"]
+RUN dotnet restore "./docker-compose-asp.net-elastic-tif/Sample2/Sample2.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./docker-tif-elastic-mongodb/Sample2/Sample2.csproj" -c Release -o /app/build
+RUN dotnet build "./docker-compose-asp.net-elastic-tif/Sample2/Sample2.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "./docker-tif-elastic-mongodb/Sample2/Sample2.csproj" -c Release -o /app/publish
+RUN dotnet publish "./docker-compose-asp.net-elastic-tif/Sample2/Sample2.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
