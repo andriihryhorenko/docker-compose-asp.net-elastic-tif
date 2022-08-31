@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XdsuTJEwaMilYQ3mO/ktb6LEJHuE7zYXnRGB1Fc4LSVymVVMEfaRdK3HARQzbCJO8HWla8kgxXUMmVpIIcCtQQ==",
+  "success": true,
+  "projectFilePath": "/Users/olhalahutina/Documents/GitHub/SampleApp2/Sample2/Sample2.csproj",
+  "expectedPackageFiles": [
+    "/Users/olhalahutina/.nuget/packages/microsoft.visualstudio.azure.containers.tools.targets/1.14.0/microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "/Users/olhalahutina/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/olhalahutina/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.28/microsoft.netcore.app.host.osx-x64.3.1.28.nupkg.sha512",
+    "/Users/olhalahutina/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

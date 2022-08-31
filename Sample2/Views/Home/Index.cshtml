@@ -1,0 +1,38 @@
+﻿@page
+
+
+<div class="text-center">
+    <h1 class="display-4">Current prime number is <span id="currNumber"></span></h1>
+    <p><button onclick="getNextPrimeNumber()" >Find next prime number</button>.</p>
+</div>
+
+<script>
+  var currentNumber = 1;
+
+
+  (function() {
+      var el = document.getElementById("currNumber")
+      if (el){
+            el.innerHTML=currentNumber;
+      }
+
+  })();
+
+
+  function getNextPrimeNumber(){
+      var prevNumber  = currentNumber;
+
+      fetch('prime/GetNext?prevNumber='+prevNumber)
+      .then(function (response) {
+	            return response.json();
+        }).then(function (data) {
+	         currentNumber = data;
+        document.getElementById("currNumber").innerHTML=currentNumber;
+        })
+      .then((error) => {
+        console.log(error);
+      });
+  }
+
+</script>
+
